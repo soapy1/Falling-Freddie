@@ -1,0 +1,24 @@
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\bin\Debug\FallingFreddie.exe
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\bin\Debug\FallingFreddie.pdb
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\bin\Debug\FallingFreddie.xml
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\FallingFreddie.Resources.resources
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\FallingFreddie.vbproj.GenerateResource.Cache
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\FallingFreddie.exe
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\FallingFreddie.xml
+C:\Users\Sophia Castellarin\AppData\Local\Temporary Projects\FallingFreddie\obj\Debug\FallingFreddie.pdb
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.exe
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.xml
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.pdb
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\bin\Debug\FallingFreddie.exe
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\bin\Debug\FallingFreddie.pdb
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\bin\Debug\FallingFreddie.xml
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.frmEndScreen.resources
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.frmGameScreen.resources
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.frmTitleScreen.resources
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.Resources.resources
+C:\Users\Sophia Castellarin\Documents\Visual Studio 2008\Projects\FallingFreddie\FallingFreddie\obj\Debug\FallingFreddie.vbproj.GenerateResource.Cache
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.exe
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.xml
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.pdb
