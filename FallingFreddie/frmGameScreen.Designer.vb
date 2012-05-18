@@ -36,7 +36,7 @@ Partial Class frmGameScreen
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Lime
-        Me.PictureBox1.Location = New System.Drawing.Point(138, 37)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 37)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(521, 457)
         Me.PictureBox1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class frmGameScreen
         'lblQuestion
         '
         Me.lblQuestion.AutoSize = True
-        Me.lblQuestion.Location = New System.Drawing.Point(12, 44)
+        Me.lblQuestion.Location = New System.Drawing.Point(712, 73)
         Me.lblQuestion.Name = "lblQuestion"
         Me.lblQuestion.Size = New System.Drawing.Size(104, 13)
         Me.lblQuestion.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class frmGameScreen
         '
         'txtAns
         '
-        Me.txtAns.Location = New System.Drawing.Point(138, 500)
+        Me.txtAns.Location = New System.Drawing.Point(421, 500)
         Me.txtAns.Name = "txtAns"
         Me.txtAns.Size = New System.Drawing.Size(100, 20)
         Me.txtAns.TabIndex = 2
@@ -77,13 +77,13 @@ Partial Class frmGameScreen
         'NewGameToolStripMenuItem
         '
         Me.NewGameToolStripMenuItem.Name = "NewGameToolStripMenuItem"
-        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.NewGameToolStripMenuItem.Text = "New Game"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'frmGameScreen

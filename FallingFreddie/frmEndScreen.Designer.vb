@@ -29,6 +29,7 @@ Partial Class frmEndScreen
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.NewGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.lblPercent = New System.Windows.Forms.Label
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,7 +48,7 @@ Partial Class frmEndScreen
         '
         Me.lblRank.AutoSize = True
         Me.lblRank.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRank.Location = New System.Drawing.Point(39, 118)
+        Me.lblRank.Location = New System.Drawing.Point(39, 152)
         Me.lblRank.Name = "lblRank"
         Me.lblRank.Size = New System.Drawing.Size(129, 24)
         Me.lblRank.TabIndex = 1
@@ -80,20 +81,31 @@ Partial Class frmEndScreen
         'NewGameToolStripMenuItem
         '
         Me.NewGameToolStripMenuItem.Name = "NewGameToolStripMenuItem"
-        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.NewGameToolStripMenuItem.Text = "New Game"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
+        '
+        'lblPercent
+        '
+        Me.lblPercent.AutoSize = True
+        Me.lblPercent.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPercent.Location = New System.Drawing.Point(39, 98)
+        Me.lblPercent.Name = "lblPercent"
+        Me.lblPercent.Size = New System.Drawing.Size(178, 24)
+        Me.lblPercent.TabIndex = 4
+        Me.lblPercent.Text = "Percentage Correct:"
         '
         'frmEndScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 532)
+        Me.Controls.Add(Me.lblPercent)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblRank)
         Me.Controls.Add(Me.lblScore)
@@ -115,4 +127,5 @@ Partial Class frmEndScreen
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NewGameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblPercent As System.Windows.Forms.Label
 End Class

@@ -121,11 +121,13 @@ Partial Class frmTitleScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.FallingFreddie.My.Resources.Resources.introPic
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(889, 532)
         Me.Controls.Add(Me.grpDifficulty)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
+        Me.MaximumSize = New System.Drawing.Size(905, 570)
         Me.Name = "frmTitleScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Falling Freddie!"
