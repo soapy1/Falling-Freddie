@@ -54,16 +54,19 @@ Partial Class frmTitleScreen
         '
         'lblTitle
         '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(58, 9)
+        Me.lblTitle.Location = New System.Drawing.Point(112, 58)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(775, 218)
+        Me.lblTitle.Size = New System.Drawing.Size(691, 108)
         Me.lblTitle.TabIndex = 2
         Me.lblTitle.Text = "Falling Freddie"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'grpDifficulty
         '
+        Me.grpDifficulty.BackColor = System.Drawing.Color.Transparent
         Me.grpDifficulty.Controls.Add(Me.radHard)
         Me.grpDifficulty.Controls.Add(Me.radMedium)
         Me.grpDifficulty.Controls.Add(Me.radEasy)
@@ -116,7 +119,8 @@ Partial Class frmTitleScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.FallingFreddie.My.Resources.Resources.introPic
         Me.ClientSize = New System.Drawing.Size(889, 532)
         Me.Controls.Add(Me.grpDifficulty)
         Me.Controls.Add(Me.lblTitle)
@@ -128,6 +132,7 @@ Partial Class frmTitleScreen
         Me.grpDifficulty.ResumeLayout(False)
         Me.grpDifficulty.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnStart As System.Windows.Forms.Button

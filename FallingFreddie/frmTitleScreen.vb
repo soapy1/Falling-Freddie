@@ -26,7 +26,7 @@
 
     Private Sub btnStart_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnStart.MouseHover
 
-        Me.btnStart.Font = New Font("Microsoft Sans Serif", 14)     'Enlarges font when mouse hovers over it
+        Me.btnStart.Font = New Font("Microsoft Sans Serif", 14, FontStyle.Bold)     'Enlarges font when mouse hovers over it
 
     End Sub
 
@@ -38,7 +38,7 @@
 
     Private Sub btnExit_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.MouseHover
 
-        Me.btnExit.Font = New Font("Microsoft Sans Serif", 14)     'Enlarges font when mouse hovers over it
+        Me.btnExit.Font = New Font("Microsoft Sans Serif", 14, FontStyle.Bold)     'Enlarges font when mouse hovers over it
 
     End Sub
 
