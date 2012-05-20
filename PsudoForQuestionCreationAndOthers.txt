@@ -1,0 +1,286 @@
+Psudo code for Operation Selection and Other
+
+
+
+'----------------------------------------------------------------------------
+'
+'Defines what operation is going to be used when creating the math equation
+'
+'-----------------------------------------------------------------------------
+
+Sub OperationSelection()
+	
+	Dim intOperation as Integer 
+
+	intOperation = (4) * Rnd() + 1	        'Creates a random number between 1 and 4
+
+	If intOperation = 1 Then
+		call OperationAddition
+	else if intOperation = 2 Then
+		call OperationSubtraction
+	else if intOperation = 3 Then
+		call OperationMultiplication
+	else if intOperation = 4 Then
+		call OperationDivision		'In operation division include option for Modulous division on the Hard level
+		 
+	End If
+End Sub
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+'-----------------------------------------------------------------------------
+'
+'Defines what questions are asked when the operation is addition
+'
+'------------------------------------------------------------------------------
+
+Sub OperationAddition()
+
+	Dim numOne as Integer, numTwo as Integer, Ans as Integer
+
+	if Difficulty = 1 Then			'Easy level
+		numOne = (50) * Rnd() + 1
+		numTwo = (50) * Rnd() + 1
+		
+		Ans = num0ne + numTwo
+		
+		call CheckAns()			
+
+	else if Difficulty = 2 			'Medium level
+		numOne = (500) * Rnd() + 1
+		numTwo = (500) * Rnd() + 1
+		
+		Ans = num0ne + numTwo
+		
+		call CheckAns()	
+
+	else if Difficulty = 3			'Hard level
+		numOne = (5000) * Rnd() + 1
+		numTwo = (5000) * Rnd() + 1	
+
+		Ans = numOne + numTwo
+
+		call CheckAns()
+	End if
+End Sub	
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+'-----------------------------------------------------------------------------
+'
+'Defines what questions are asked when the operation is subtrction
+'
+'------------------------------------------------------------------------------
+
+Sub OperationSubtraction()
+
+	Dim numOne as Integer, numTwo as Integer, Ans as Integer
+
+	if Difficulty = 1 Then			'Easy level
+		numOne = (50) * Rnd() + 1
+		numTwo = (50) * Rnd() + 1
+		
+		Ans = num0ne - numTwo
+		
+		call CheckAns()			
+
+	else if Difficulty = 2 			'Medium level
+		numOne = (500) * Rnd() + 1
+		numTwo = (500) * Rnd() + 1
+		
+		Ans = num0ne - numTwo
+		
+		call CheckAns()	
+
+	else if Difficulty = 3			'Hard level
+		numOne = (5000) * Rnd() + 1
+		numTwo = (5000) * Rnd() + 1	
+
+		Ans = numOne - numTwo
+
+		call CheckAns()
+	End if
+End Sub	
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+'-----------------------------------------------------------------------------
+'
+'Defines what questions are asked when the operation is multiplication
+'
+'------------------------------------------------------------------------------
+
+Sub OperationMultiplication()
+
+	Dim numOne as Integer, numTwo as Integer, Ans as Integer
+
+	if Difficulty = 1 Then			'Easy level
+		numOne = (5) * Rnd() + 1
+		numTwo = (5) * Rnd() + 1
+		
+		Ans = num0ne * numTwo
+		
+		call CheckAns()			
+
+	else if Difficulty = 2 			'Medium level
+		numOne = (10) * Rnd() + 1
+		numTwo = (10) * Rnd() + 1
+		
+		Ans = num0ne * numTwo
+		
+		call CheckAns()	
+
+	else if Difficulty = 3			'Hard level
+		numOne = (15) * Rnd() + 1
+		numTwo = (15) * Rnd() + 1	
+
+		Ans = numOne * numTwo
+
+		call CheckAns()
+	End if
+End Sub	
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+'-----------------------------------------------------------------------------
+'
+'Defines what questions are asked when the operation is division
+'NOTE: uses integer division
+'
+'------------------------------------------------------------------------------
+
+Sub OperationDivision()
+
+	Dim numOne as Integer, numTwo as Integer, Ans as Integer
+
+	if Difficulty = 1 Then			'Easy level
+		numOne = (10) * Rnd() + 1
+		numTwo = (5) * Rnd() + 1
+		
+		Ans = num0ne \ numTwo
+		
+		call CheckAns()			
+
+	else if Difficulty = 2 			'Medium level
+		numOne = (50) * Rnd() + 1
+		numTwo = (5) * Rnd() + 1
+		
+		Ans = num0ne \ numTwo
+		
+		call CheckAns()	
+
+	else if Difficulty = 3			'Hard level
+		numOne = (100) * Rnd() + 1
+		numTwo = (10) * Rnd() + 1	
+
+		Ans = numOne \ numTwo
+
+		call CheckAns()
+	End If
+End Sub	
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+'------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'
+'Gets the users input and checksif it correct
+'NOTE: must state intCorret and intIncorrect as global variables
+'
+'--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sub CheckAns()
+
+	Dim userInput as Integer
+
+	userInput = Val(Me.txtInput.Text)	'retrives input from user via text box
+
+	if userInput isNumeric = True Then	'makes sure the input value is a number
+		
+		if userInput == Ans Then
+			intCorrect += 1		'if the answer is correct the user gets + 1 correct and gets the JetPack bonus
+			Call JetPack() 
+		else
+			intIncorrect += 1	'if user in incorrect gets + 1 incorrect
+		End if
+		
+	else
+		Me.txtInput.Text = "Not a valid input Dum Dum"
+	End if
+End Sub
+	
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'
+'When this function is called upon, the user is given the jet pack bonus
+'NOTE: must declare altitude as a global variable
+'
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+
+
+Sub JetPack()
+
+	
+	tmrAltitude.Stop	'Stops animation of Freddie Falling					
+	tmrJetPack.Start	'Starts tmrJetPack in order to allow for a Jet Pack animation
+
+	Const JET_PIC as Integer = 5		'The number of pictures plus one
+	Static jetPic as Integer
+	
+	altitude += 10	'the altitude of Freddie increases with the jet pack (make this value half of the value for velocity of Freddie Falling)
+
+	case jetPic select							'Loops pictures of jet pack to create an animation
+		case 0
+			Me.picAnimation.Image = My.Resources.JetPackOne
+		case 1
+			Me.picAnimation.Image = My.Resources.JetPackTwo
+		case 2
+			Me.picAnimation.Image = My.Resources.JetPackThree
+		case 3
+			Me.picAnimation.Image = My.Resources.JetPackFour
+		case 4								'Stops the jet pack animation and continues with the freddie falling animation
+			tmrJetPack.Stop
+			tmrAltitude.Start
+	End case
+	
+	jetPic = (jetPic + 1) Mod JET_PIC	'Determines which picture will be displayed
+End Sub
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
