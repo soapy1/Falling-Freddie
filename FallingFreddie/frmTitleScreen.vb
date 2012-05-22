@@ -1,5 +1,7 @@
 ﻿Public Class frmTitleScreen
 
+    Public intDiff As Integer
+
     Private Sub frmTitleScreen_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         With Me.btnStart    'Sets the settings for btnStart when the form loads.  Will make btnStart appear above btnExit
@@ -45,6 +47,33 @@
     Private Sub btnExit_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.MouseLeave
 
         Me.btnExit.Font = New Font("Microsoft Sans Serif", 12)     'Shrinks font when mouse leaves it
+
+    End Sub
+
+    Private Sub radEasy_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radEasy.CheckedChanged
+
+        intDiff = 1     'Sets the difficulty to Easy
+
+        Me.Visible = False              'Closes the current form
+        frmGameScreen.Visible = True    'Opens the game screen
+
+    End Sub
+
+    Private Sub radMedium_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radMedium.CheckedChanged
+
+        intDiff = 2     'Sets the difficulty to Medium
+
+        Me.Visible = False              'Closes the current form
+        frmGameScreen.Visible = True    'Opens the game screen
+
+    End Sub
+
+    Private Sub radHard_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radHard.CheckedChanged
+
+        intDiff = 3     'Sets the difficulty to Hard
+
+        Me.Visible = False              'Closes the current form
+        frmGameScreen.Visible = True    'Opens the game screen
 
     End Sub
 End Class

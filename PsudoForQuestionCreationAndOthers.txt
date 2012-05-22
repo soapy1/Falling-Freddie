@@ -167,10 +167,10 @@ Sub OperationDivision()
 	Dim numOne as Integer, numTwo as Integer, Ans as Integer
 
 	if Difficulty = 1 Then			'Easy level
-		numOne = (10) * Rnd() + 1
-		numTwo = (5) * Rnd() + 1
+		numOne = ((10) * Rnd() + 1) * 2)
+		numTwo = 2
 		
-		Ans = num0ne \ numTwo
+		Ans = num0ne / numTwo
 		
 		call CheckAns()			
 
@@ -178,7 +178,7 @@ Sub OperationDivision()
 		numOne = (50) * Rnd() + 1
 		numTwo = (5) * Rnd() + 1
 		
-		Ans = num0ne \ numTwo
+		Ans = num0ne / numTwo
 		
 		call CheckAns()	
 
@@ -186,7 +186,7 @@ Sub OperationDivision()
 		numOne = (100) * Rnd() + 1
 		numTwo = (10) * Rnd() + 1	
 
-		Ans = numOne \ numTwo
+		Ans = numOne / numTwo
 
 		call CheckAns()
 	End If
@@ -254,7 +254,7 @@ Sub JetPack()
 		case 2
 			Me.picAnimation.Image = My.Resources.JetPackThree
 		case 3
-			Me.picAnimation.Image = My.Resources.JetPackFour
+			Me.picAnimation.Image = My.Resources.JetPackFour	
 		case 4								'Stops the jet pack animation and continues with the freddie falling animation
 			tmrJetPack.Stop
 			tmrAltitude.Start
