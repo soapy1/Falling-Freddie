@@ -22,34 +22,35 @@ Partial Class frmGameScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.picAnimation = New System.Windows.Forms.PictureBox
         Me.lblQuestion = New System.Windows.Forms.Label
         Me.txtAns = New System.Windows.Forms.TextBox
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.NewGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lblStatus = New System.Windows.Forms.Label
+        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'picAnimation
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Lime
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 37)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(521, 457)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.picAnimation.BackColor = System.Drawing.Color.Lime
+        Me.picAnimation.Location = New System.Drawing.Point(0, 37)
+        Me.picAnimation.Name = "picAnimation"
+        Me.picAnimation.Size = New System.Drawing.Size(521, 457)
+        Me.picAnimation.TabIndex = 0
+        Me.picAnimation.TabStop = False
         '
         'lblQuestion
         '
         Me.lblQuestion.AutoSize = True
+        Me.lblQuestion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblQuestion.Location = New System.Drawing.Point(712, 73)
         Me.lblQuestion.Name = "lblQuestion"
-        Me.lblQuestion.Size = New System.Drawing.Size(104, 13)
+        Me.lblQuestion.Size = New System.Drawing.Size(0, 24)
         Me.lblQuestion.TabIndex = 1
-        Me.lblQuestion.Text = "Insert Question Here"
         '
         'txtAns
         '
@@ -57,6 +58,7 @@ Partial Class frmGameScreen
         Me.txtAns.Name = "txtAns"
         Me.txtAns.Size = New System.Drawing.Size(100, 20)
         Me.txtAns.TabIndex = 2
+        Me.txtAns.UseWaitCursor = True
         '
         'MenuStrip1
         '
@@ -77,40 +79,50 @@ Partial Class frmGameScreen
         'NewGameToolStripMenuItem
         '
         Me.NewGameToolStripMenuItem.Name = "NewGameToolStripMenuItem"
-        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewGameToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.NewGameToolStripMenuItem.Text = "New Game"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
+        '
+        'lblStatus
+        '
+        Me.lblStatus.Location = New System.Drawing.Point(288, 500)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(118, 20)
+        Me.lblStatus.TabIndex = 4
+        Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmGameScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 532)
+        Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.txtAns)
         Me.Controls.Add(Me.lblQuestion)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picAnimation)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmGameScreen"
         Me.Text = "Falling Freddie!"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picAnimation As System.Windows.Forms.PictureBox
     Friend WithEvents lblQuestion As System.Windows.Forms.Label
     Friend WithEvents txtAns As System.Windows.Forms.TextBox
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NewGameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblStatus As System.Windows.Forms.Label
 
 End Class
