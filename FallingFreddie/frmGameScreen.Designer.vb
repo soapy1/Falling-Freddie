@@ -101,6 +101,7 @@ Partial Class frmGameScreen
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 532)
+        Me.ControlBox = False
         Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.txtAns)
         Me.Controls.Add(Me.lblQuestion)
