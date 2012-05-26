@@ -22,7 +22,7 @@ Partial Class frmGameScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.picAnimation = New System.Windows.Forms.PictureBox
+        Me.components = New System.ComponentModel.Container
         Me.lblQuestion = New System.Windows.Forms.Label
         Me.txtAns = New System.Windows.Forms.TextBox
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
@@ -30,31 +30,31 @@ Partial Class frmGameScreen
         Me.NewGameToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.lblStatus = New System.Windows.Forms.Label
-        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tmrFreddie = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrJetPack = New System.Windows.Forms.Timer(Me.components)
+        Me.lblAltitude = New System.Windows.Forms.Label
+        Me.picAnimation = New System.Windows.Forms.PictureBox
+        Me.lblAltitudePrompt = New System.Windows.Forms.Label
+        Me.lblQuestionPrompt = New System.Windows.Forms.Label
+        Me.tmrClock = New System.Windows.Forms.Timer(Me.components)
+        Me.lblClockPrompt = New System.Windows.Forms.Label
+        Me.lblClock = New System.Windows.Forms.Label
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'picAnimation
-        '
-        Me.picAnimation.BackColor = System.Drawing.Color.Lime
-        Me.picAnimation.Location = New System.Drawing.Point(0, 37)
-        Me.picAnimation.Name = "picAnimation"
-        Me.picAnimation.Size = New System.Drawing.Size(521, 457)
-        Me.picAnimation.TabIndex = 0
-        Me.picAnimation.TabStop = False
         '
         'lblQuestion
         '
         Me.lblQuestion.AutoSize = True
         Me.lblQuestion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblQuestion.Location = New System.Drawing.Point(712, 73)
+        Me.lblQuestion.Location = New System.Drawing.Point(751, 309)
         Me.lblQuestion.Name = "lblQuestion"
         Me.lblQuestion.Size = New System.Drawing.Size(0, 24)
         Me.lblQuestion.TabIndex = 1
         '
         'txtAns
         '
-        Me.txtAns.Location = New System.Drawing.Point(421, 500)
+        Me.txtAns.Location = New System.Drawing.Point(605, 501)
         Me.txtAns.Name = "txtAns"
         Me.txtAns.Size = New System.Drawing.Size(100, 20)
         Me.txtAns.TabIndex = 2
@@ -90,11 +90,77 @@ Partial Class frmGameScreen
         '
         'lblStatus
         '
-        Me.lblStatus.Location = New System.Drawing.Point(288, 500)
+        Me.lblStatus.Location = New System.Drawing.Point(455, 503)
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.Size = New System.Drawing.Size(118, 20)
         Me.lblStatus.TabIndex = 4
         Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'tmrFreddie
+        '
+        Me.tmrFreddie.Interval = 200
+        '
+        'tmrJetPack
+        '
+        Me.tmrJetPack.Interval = 200
+        '
+        'lblAltitude
+        '
+        Me.lblAltitude.AutoSize = True
+        Me.lblAltitude.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAltitude.Location = New System.Drawing.Point(751, 220)
+        Me.lblAltitude.Name = "lblAltitude"
+        Me.lblAltitude.Size = New System.Drawing.Size(0, 20)
+        Me.lblAltitude.TabIndex = 5
+        '
+        'picAnimation
+        '
+        Me.picAnimation.BackColor = System.Drawing.Color.White
+        Me.picAnimation.Location = New System.Drawing.Point(184, 38)
+        Me.picAnimation.Name = "picAnimation"
+        Me.picAnimation.Size = New System.Drawing.Size(521, 457)
+        Me.picAnimation.TabIndex = 0
+        Me.picAnimation.TabStop = False
+        '
+        'lblAltitudePrompt
+        '
+        Me.lblAltitudePrompt.AutoSize = True
+        Me.lblAltitudePrompt.Location = New System.Drawing.Point(711, 192)
+        Me.lblAltitudePrompt.Name = "lblAltitudePrompt"
+        Me.lblAltitudePrompt.Size = New System.Drawing.Size(69, 13)
+        Me.lblAltitudePrompt.TabIndex = 6
+        Me.lblAltitudePrompt.Text = "Your altitude:"
+        '
+        'lblQuestionPrompt
+        '
+        Me.lblQuestionPrompt.AutoSize = True
+        Me.lblQuestionPrompt.Location = New System.Drawing.Point(711, 269)
+        Me.lblQuestionPrompt.Name = "lblQuestionPrompt"
+        Me.lblQuestionPrompt.Size = New System.Drawing.Size(107, 13)
+        Me.lblQuestionPrompt.TabIndex = 7
+        Me.lblQuestionPrompt.Text = "Answer this question:"
+        '
+        'tmrClock
+        '
+        Me.tmrClock.Interval = 1000
+        '
+        'lblClockPrompt
+        '
+        Me.lblClockPrompt.AutoSize = True
+        Me.lblClockPrompt.Location = New System.Drawing.Point(12, 192)
+        Me.lblClockPrompt.Name = "lblClockPrompt"
+        Me.lblClockPrompt.Size = New System.Drawing.Size(73, 13)
+        Me.lblClockPrompt.TabIndex = 8
+        Me.lblClockPrompt.Text = "Time elapsed:"
+        '
+        'lblClock
+        '
+        Me.lblClock.AutoSize = True
+        Me.lblClock.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClock.Location = New System.Drawing.Point(35, 225)
+        Me.lblClock.Name = "lblClock"
+        Me.lblClock.Size = New System.Drawing.Size(0, 20)
+        Me.lblClock.TabIndex = 9
         '
         'frmGameScreen
         '
@@ -102,6 +168,11 @@ Partial Class frmGameScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(889, 532)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lblClock)
+        Me.Controls.Add(Me.lblClockPrompt)
+        Me.Controls.Add(Me.lblQuestionPrompt)
+        Me.Controls.Add(Me.lblAltitudePrompt)
+        Me.Controls.Add(Me.lblAltitude)
         Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.txtAns)
         Me.Controls.Add(Me.lblQuestion)
@@ -110,9 +181,9 @@ Partial Class frmGameScreen
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmGameScreen"
         Me.Text = "Falling Freddie!"
-        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.picAnimation, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -125,5 +196,13 @@ Partial Class frmGameScreen
     Friend WithEvents NewGameToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblStatus As System.Windows.Forms.Label
+    Friend WithEvents tmrFreddie As System.Windows.Forms.Timer
+    Friend WithEvents tmrJetPack As System.Windows.Forms.Timer
+    Friend WithEvents lblAltitude As System.Windows.Forms.Label
+    Friend WithEvents lblAltitudePrompt As System.Windows.Forms.Label
+    Friend WithEvents lblQuestionPrompt As System.Windows.Forms.Label
+    Friend WithEvents tmrClock As System.Windows.Forms.Timer
+    Friend WithEvents lblClockPrompt As System.Windows.Forms.Label
+    Friend WithEvents lblClock As System.Windows.Forms.Label
 
 End Class

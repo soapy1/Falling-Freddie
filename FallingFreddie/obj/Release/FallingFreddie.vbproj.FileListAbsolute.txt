@@ -1,0 +1,12 @@
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\bin\Release\FallingFreddie.exe
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\bin\Release\FallingFreddie.pdb
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\bin\Release\FallingFreddie.xml
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.frmEndScreen.resources
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.frmGameScreen.resources
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.frmTitleScreen.resources
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.Resources.resources
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.vbproj.GenerateResource.Cache
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.exe
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.xml
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Release\FallingFreddie.pdb

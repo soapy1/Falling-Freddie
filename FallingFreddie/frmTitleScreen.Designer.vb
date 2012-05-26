@@ -59,9 +59,9 @@ Partial Class frmTitleScreen
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(112, 58)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(691, 108)
+        Me.lblTitle.Size = New System.Drawing.Size(719, 108)
         Me.lblTitle.TabIndex = 2
-        Me.lblTitle.Text = "Falling Freddie"
+        Me.lblTitle.Text = "Falling Freddie!"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'grpDifficulty
@@ -127,6 +127,7 @@ Partial Class frmTitleScreen
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnStart)
+        Me.DoubleBuffered = True
         Me.MaximumSize = New System.Drawing.Size(905, 570)
         Me.Name = "frmTitleScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

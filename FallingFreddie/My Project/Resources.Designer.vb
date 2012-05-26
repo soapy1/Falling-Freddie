@@ -60,6 +60,41 @@ Namespace My.Resources
             End Set
         End Property
         
+        Friend ReadOnly Property fallingFreddiePictureFall1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fallingFreddiePictureFall1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property fallingFreddiePictureFall2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fallingFreddiePictureFall2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property fallingFreddiePictureFall3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fallingFreddiePictureFall3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property fallingFreddiePictureFly1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fallingFreddiePictureFly1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property fallingFreddiePictureFly2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fallingFreddiePictureFly2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property introPic() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("introPic", resourceCulture)
