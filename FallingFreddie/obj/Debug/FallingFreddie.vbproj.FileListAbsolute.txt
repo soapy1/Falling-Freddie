@@ -31,3 +31,4 @@ C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFred
 C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.frmTitleScreen.resources
 C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.Resources.resources
 C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.vbproj.GenerateResource.Cache
+C:\Users\Sophia Castellarin\Falling-Freddie\FallingFreddie\obj\Debug\FallingFreddie.frmBlackScreen.resources

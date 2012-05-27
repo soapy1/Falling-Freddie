@@ -3,7 +3,6 @@
     'TODO:
     'Add help/instructions 
     'Add music + sound effects
-    'Add black screen with death
     'End Game, ultimate goal
     'Easter eggs
 
@@ -12,7 +11,7 @@
     Public intIncorrect As Integer
     Public dblAnswer As Decimal
     Public dblUserInput As Double
-    Public intAltitude As Integer = 2500
+    Public intAltitude As Integer = 100
     Public intClock As Integer
 
     Private Sub frmGameScreen_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -370,7 +369,7 @@
             tmrJetPack.Enabled = False      '
 
             Me.Visible = False              'Moves to the from frmEndScreen
-            frmEndScreen.Visible = True     '
+            frmBlackScreen.Visible = True     '
 
         End If
     End Sub
@@ -406,7 +405,7 @@
             tmrJetPack.Enabled = False      '
 
             Me.Visible = False              'Moves to the from frmEndScreen
-            frmEndScreen.Visible = True     '
+            frmBlackScreen.Visible = True   '
 
         End If
 
